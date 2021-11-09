@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Open+Sans:wght@500;600;700;800&family=Quicksand:wght@300;400;500;600;700&display=swap');
+@font-face {
+    font-family: 'Garet-Book';
+    src: url('font/Garet-Book.woff');
+}
+@font-face {
+    font-family: 'Garet-Heavy';
+    src: url('font/Garet-Heavy.woff');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-weight: 500;
+}
+body {
+    background-color: #F0E9D2;
+}
+header {
+    background-color: #CA2525;
+}
+p, h1, h2, h3, h4, h5, h6, a, span {
+    font-family: 'Quicksand', sans-serif !important;
+}
+.navbar img {
+    height: 50px;
+}
+nav a, #contact a {
+    font-weight: 600;
+}
+nav .btn {
+    font-weight: 600;
+    border-width: 2px;
+}
+#home {
+    height: 720px;
+    width: 100%;
+    overflow: hidden;   
+}
+.cover {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 720px;
+    position: relative;
+    padding-top: 240px;
+    transition: all 2s;
+}
+.hmj-cover {
+    color: #CA2525;
+    top: -690px;
+}
+.komet-cover {
+    background-image: url('../img/bg-home-red.png');
+    top: -1380px;
+}
+.komet-cover h1 {
+    font-family: 'Garet-Heavy', sans-serif !important;
+}
+h1 {
+    font-family: 'Open Sans', sans-serif !important;
+}
+.present {
+    font-family: 'Dancing Script', cursive !important;
+}
+#about, #event, #timeline, #gallery, #sponsor {
+    padding-top: 90px;
+}
+article {
+    text-align: justify;
+}
+.btn-danger {
+    background-color: #CA2525;
+}
+.btn-danger:hover {
+    background-color: #6A1518;
+}
+.olimpiade .figure, .webinar .figure {
+    width: 200px;
+    position: absolute;
+    margin-top: -140px;
+}
+#event h3 {
+    margin-top: 140px;
+}
+#timeline {
+    background-image: url('../img/bg-timeline.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 620px;
+}
+#timeline h3, #timeline p {
+    font-size: 1.25rem;
+}
+.bg-red {
+    background-color: #CA2525;
+    color: white;
+    cursor: pointer;
+}
+.bg-whitesmoke {
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+.bg-whitesmoke:hover {
+    background-color: #CA2525;
+    color: white;
+}
+.text-red {
+    color: #CA2525;
+}
+#timeline table {
+    transition: all 1s;
+}
+table p {
+    margin: 0.5rem 0;
+}
+.gallery {
+    padding: 20px 10px;
+    margin: 0 auto;
+    width: 840px;
+    height: 480px;
+}
+.carousel-control-next, .carousel-control-prev {
+    width: 40%;
+}
+#sponsor img {
+    height: 60px;
+}
+#qna {
+    margin-top: 50px;
+}
+footer {
+    margin-top: 50px;
+}
+footer .bg-red {
+    cursor: none;
+}
+#contact {
+    padding-top: 50px;
+}
+.logos img {
+    padding: 0 4px;
+    margin-bottom: 5px;
+}
+#contact hr {
+    border: 1px solid white;
+    opacity: 100%;
+}
+
+@media (max-width: 576px) {
+    #about, #event, #timeline, #gallery, #sponsor {
+        padding-top: 10px;
+    }
+    .navbar img {
+        height: 40px;
+    }
+    .navbar-toggler:focus {
+        box-shadow: none;
+    }
+    .cover {
+        background-size: cover;
+    }
+    .gallery {
+        width: 320px;
+        height: unset;
+    }
+    .display-2 {
+        font-size: 2.5rem;
+    }
+    .olimpiade .figure, .webinar .figure {
+        width: 160px;
+        margin-top: -100px;
+    }
+    #timeline {
+        background-image: none;
+        height: unset;
+    }
+    #timeline h3, #timeline p {
+        font-size: 1rem;
+    }
+    #sponsor img {
+        height: 40px;
+    }
+    #copyright p {
+        font-size: 0.75rem;
+    }
+}
